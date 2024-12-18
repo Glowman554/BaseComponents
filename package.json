@@ -1,6 +1,6 @@
 {
     "name": "@glowman554/base-components",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "scripts": {
         "format": "npx prettier . --write --ignore-unknown",
         "test": "echo \"Error: no test specified\" && exit 1"
