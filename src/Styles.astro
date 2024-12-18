@@ -1,82 +1,33 @@
 <style is:global>
-    html,
-    body {
-        margin: 0;
-        background-color: #ffffff;
-        color: #000000;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    h4 {
-        font-size: 22px;
-    }
-
-    h5 {
-        font-size: 22px;
-    }
-
-    h6 {
-        font-size: 22px;
-    }
-
     * {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 22px;
-        font-weight: 300;
-        margin: 0;
-    }
-
-    a {
-        color: inherit;
     }
 
     .field {
-        background-color: #b8b8b8ff;
-        padding: 1rem;
-        border-radius: 16px;
+        @apply rounded-xl bg-slate-100 p-4;
     }
+
     .section {
-        display: flex;
-        justify-content: space-between;
-        margin: 1rem;
+        @apply m-4 flex justify-between;
     }
 
     .section-small {
-        display: flex;
-        justify-content: space-between;
+        @apply flex justify-between;
     }
 
     .section-small:hover {
-        background-color: grey;
+        @apply bg-slate-600;
     }
 
     .center {
-        display: flex;
-        justify-content: center;
+        @apply flex justify-center;
     }
 
-    main {
-        margin: auto;
-        width: 70%;
-        padding: 10px;
+    .button {
+        @apply rounded-xl bg-slate-500 p-2;
     }
 
-    @media screen and (max-width: 600px) {
-        main {
-            margin: auto;
-            width: 90%;
-            padding: 10px;
-        }
+    .responsive .entry {
+        @apply max-sm:float-none max-sm:!mb-1 max-sm:!mt-1 max-sm:!block max-sm:text-left;
     }
 </style>

@@ -19,7 +19,7 @@ export default function <T>(props: Props<T>) {
             <ContinueBox
                 visible={continueVisible()}
                 resetCallback={() => setContinueVisible(false)}
-                cancelCallback={() => { }}
+                cancelCallback={() => {}}
                 continueCallback={() => props.callback(props.id, loading)}
             >
                 Continue deleting the element?

@@ -9,7 +9,9 @@ export default function (props: Props) {
         <Overlay visible>
             <div class="field">
                 <p>{props.error}</p>
-                <button onClick={() => location.reload()}>Reload</button>
+                <button class="button" onClick={() => location.reload()}>
+                    Reload
+                </button>
             </div>
         </Overlay>
     );

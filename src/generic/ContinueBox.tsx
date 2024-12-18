@@ -16,7 +16,7 @@ export default function (props: Props) {
                 {props.children}
                 <div class="section">
                     <button
-                        style={{ width: '40%' }}
+                        class="button w-2/5"
                         onClick={() => {
                             props.resetCallback();
                             props.continueCallback();
@@ -25,7 +25,7 @@ export default function (props: Props) {
                         Continue
                     </button>
                     <button
-                        style={{ width: '40%' }}
+                        class="button w-2/5"
                         onClick={() => {
                             props.resetCallback();
                             props.cancelCallback();

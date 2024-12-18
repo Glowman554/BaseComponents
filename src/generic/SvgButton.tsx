@@ -6,7 +6,7 @@ export interface Props {
 export default function (props: Props) {
     return (
         <span onClick={() => props.callback()}>
-            <img src={props.src} style={{ height: '1rem' }} />
+            <img src={props.src} class="h-4" />
         </span>
     );
 }
