@@ -37,7 +37,7 @@ export default function (props: { children: JSX.Element }) {
 
     return (
         <>
-            <div ref={navigation} class="fixed flex h-fit w-full flex-row justify-between bg-slate-300">
+            <div ref={navigation} class="fixed flex h-fit w-full flex-row justify-between bg-neutral-800 shadow-md">
                 <div class="flex flex-col sm:flex-row">
                     <NavigationContext.Provider value={{ reset }}>{props.children}</NavigationContext.Provider>
                 </div>
