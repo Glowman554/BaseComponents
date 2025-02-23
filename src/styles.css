@@ -1,4 +1,4 @@
-<style is:global>
+@layer components {
     * {
         font-family: 'JetBrains Mono', monospace;
     }
@@ -12,19 +12,15 @@
     }
 
     .section-small {
-        @apply flex justify-between;
-    }
-
-    .section-small:hover {
-        @apply bg-neutral-500;
+        @apply flex justify-between hover:bg-neutral-500;
     }
 
     .center {
-        @apply flex justify-center;
+        @apply flex items-center justify-center;
     }
 
     .button {
-        @apply m-2 rounded-xl bg-neutral-600 p-2;
+        @apply m-2 rounded-xl bg-neutral-600 p-2 hover:cursor-pointer hover:bg-neutral-500;
     }
 
     .input {
@@ -32,6 +28,9 @@
     }
 
     .responsive .entry {
-        @apply max-sm:float-none max-sm:!mb-1 max-sm:!mt-1 max-sm:!block max-sm:text-left;
+        @apply max-sm:float-none max-sm:!mt-1 max-sm:!mb-1 max-sm:!block max-sm:text-left;
     }
-</style>
+}
+
+@source "./**/*.tsx";
+@source "./**/*.astro";
